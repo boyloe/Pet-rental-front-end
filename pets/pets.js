@@ -52,11 +52,11 @@ function renderPetLovesTo(pet, attributeList){
 } 
 function renderPetDailyRate(pet, attributeList){
     const dailyRate = document.createElement('li')
-    dailyRate.innerText = `Daily Rate: ${pet.rate}`
+    dailyRate.innerText = `Daily Rate: $${pet.rate}`
     attributeList.appendChild(dailyRate)
 } 
 function renderPetImage(pet, attributeList){
     const image = document.createElement('li')
-    image.innerHTML = `<a href="./showPet.html?=${pet.id}"><img src=${pet.image} alt="A picture of a ${pet.breed}"></a>`
+    image.innerHTML = `<a href="../pet/pet.html?id=${pet.id}"><img src=${pet.image} alt="A picture of a ${pet.breed}"></a>`
     attributeList.appendChild(image)
 } 
