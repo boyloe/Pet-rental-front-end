@@ -103,10 +103,6 @@ main {
     padding-top: 30px;
 }
 
-.hidden-input {
-    display:none;
-}
-
 footer {
     align-self: center;
     height: 100px;
