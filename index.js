@@ -1,6 +1,5 @@
 const queryParams = new URLSearchParams(window.location.search)
 const userId = queryParams.get('user')
-console.log(userId)
 
 fetch("http://localhost:3000/users")
     .then(response => response.json())

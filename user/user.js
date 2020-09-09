@@ -1,6 +1,5 @@
 const queryParams = new URLSearchParams(window.location.search)
 const userId = queryParams.get('user_id')
-console.log(userId)
 
 const main = document.querySelector('main')
 
@@ -24,7 +23,7 @@ function showPetName(pet, section) {
     const name = document.createElement('h3')
     name.textContent = pet.name
     section.appendChild(name)
-    console.log(pet)
+   
 }
 
 function showPetImage(pet, section) {
