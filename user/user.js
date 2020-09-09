@@ -1,5 +1,6 @@
 const queryParams = new URLSearchParams(window.location.search)
 const userId = queryParams.get('user_id')
+console.log(userId)
 
 const main = document.querySelector('main')
 
@@ -16,6 +17,7 @@ function showUserInfo(user) {
         showPetName(pet, section)
         showPetImage(pet, section)
     })
+    newRentalLink(user)
 }
 
 function showPetName(pet, section) {
@@ -29,5 +31,12 @@ function showPetImage(pet, section) {
     const image = document.createElement('img')
     image.src = pet.image
     section.appendChild(image)
+}
+
+function newRentalLink(user){
+    newRental = document.createElement('a')
+    newRental.textContent = "Rent Another Pet!"
+    newRental.href = `../pets/pets.html?user_id=${user.id}`
+    document.body.appendChild(newRental)
 }
 

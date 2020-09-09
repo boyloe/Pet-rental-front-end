@@ -1,7 +1,11 @@
+//get pet_id and user_id passed from pets.html query
 const queryParams = new URLSearchParams(window.location.search)
-const petId = queryParams.get('id')
+const petId = queryParams.get('pet_id')
+const userId = queryParams.get('user_id')
+
 
 const main = document.querySelector('main')
+const rentalForm = document.querySelector('#rental-submission')
 
 fetch(`http://localhost:3000/pets/${petId}`)
     .then(response => response.json())
@@ -16,6 +20,7 @@ function displayPetCard(pet) {
     renderPetLovesTo(pet,attributeList)
     renderPetDailyRate(pet,attributeList)
     renderPetImage(pet,attributeList)
+    createRentalButton(userId, petId)
 }   
 
 function createPetCard(){
@@ -63,3 +68,20 @@ function renderPetImage(pet, attributeList){
     image.innerHTML = `<img src=${pet.image} alt="A picture of a ${pet.breed}">`
     attributeList.appendChild(image)
 } 
+
+//create a new rental selector that allows you to pick a date and verifies that date is availble. Then pull user_id and pet_id params from URL.
+function createRentalButton(userId,petId){
+    const userIdInput = document.createElement('input')
+    const petIdInput = document.createElement('input')
+
+    userIdInput.type = "number"
+    userIdInput.classList.add('hidden-input')
+    userIdInput.value = userId
+    userIdInput.name = "user_id"
+    petIdInput.type = "number"
+    petIdInput.classList.add('hidden-input')
+    petIdInput.value = petId
+    petIdInput.name = "pet_id"
+    rentalForm.appendChild(userIdInput)
+    rentalForm.appendChild(petIdInput)
+}
