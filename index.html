@@ -10,13 +10,6 @@
     </head>
 
     <body>
-        <header>
-            <nav class="nav-bar">
-                <a href= "./index.html">Home</a>
-                <a href= "./pets/pets.html">Pets</a>
-                <!-- <a>Find a Random Pet</a> -->
-            </nav>
-        </header>
         <section id="header">
             <h1 class="brand">Pet-Renter</h1>
             <p class="slogan">Money <span class="em">CAN</span> buy happiness!</p>
@@ -25,18 +18,21 @@
         <main>
             <section class="user-forms">
                 <form class="existing-user" method="GET" action="http://localhost:3001/user/user.html">
-                    Select Your Username: <select class="select bar" name="user_id" id="user-select"></select>
-                    <input class="submit bar" type="submit" value="submit">
+                    <label class="label bar" for="user-select">Existing User? Select Your Username:  </label>
+                    <select id="user-select" class="select line" name="user_id"></select>
+                    <input class="submit" type="submit" value="Log-in">
                 </form>
                 <form class="new-user" method="POST" action="http://localhost:3000/users">
-                    New User? Create a New Username: <input class="input bar" name="name" type="text" placeholder="username">
-                    <input class="submit bar" type="submit" value="Create New User">
+                    <label class="label bar" for="new-user">New User? Create a New Username:  </label>
+                    <input id="new-user" class="input line" name="name" type="text" placeholder="Username">
+                    <input class="submit" type="submit" value="Create New User">
                 </form>
             </section>
         </main>
         <footer>
             <p class="footer-items">Contact</p>
             <p class="footer-items">Github</p>
+            <p class="footer-items">Authors</p>
         </footer>
     </body>
 </html>

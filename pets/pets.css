@@ -5,27 +5,59 @@ body {
     font-family: 'Josefin Sans', 'sans-serif';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-image: url("https://images.unsplash.com/photo-1553322378-eb94e5966b0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+    background-image: url("https://media2.s-nbcnews.com/i/newscms/2016_43/1169669/girl-dog-1-today-101626-tease_e3ef43e4afd3d5bd4b4379a64dadff3f.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     color: white;
-    height: 100%;
+    height: 100vh;
+    width: 100vw;
     background-repeat: no-repeat;
 }
 
+.brand {
+    display: flex;
+    font-size: 120px;
+    margin-bottom: 0;
+    margin-top: 30px;
+    text-shadow: 4px 4px black;
+}
+
+#header .slogan {
+    display: flex;
+    text-shadow: 2px 2px black;
+    position: relative;
+    left: 155px;
+    font-weight: 700;
+    font-size: x-large;
+    margin-top: 8px;
+}
+
+.em {
+    padding-left: 5px;
+    padding-right: 7px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+}
 
 main {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     justify-content: center;
     align-items: center;
-    /* backdrop-filter: blur(4px); */
 }
 
 .pet-card { 
     background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(12px);
     text-align: center;    
     color: white;
     width: 350px;
@@ -37,6 +69,7 @@ main {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-radius: 30px;
 }
 
 .attributes {
@@ -51,14 +84,15 @@ main {
     width: 250px;
     height: 250px;
     object-fit: cover;
+    border-radius: 30px;
 }
 
 .Socks {
-    object-position: 10% 10px;
+    object-position: 10% 0px;
 }
 
 .Fluffy {
-    object-position: 80% 10px;
+    object-position: 80% 0px;
 }
 
 .Rover {
