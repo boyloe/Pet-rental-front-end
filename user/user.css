@@ -15,42 +15,12 @@ body {
     background-repeat: no-repeat;
 }
 
-.nav-bar {
-    padding-top: 50px;
+.brand {
+    display: flex;
+    font-size: 120px;
     margin-bottom: 0;
-}
-
-.line, .bar, .submit, .footer-items {
-    border-radius: 25px;
-    font-family: 'Josefin Sans', 'sans-serif';
-    height: 22px;
-    color: chocolate;
-}
-.bar, .footer-items {
-    text-shadow: 1px 1px black;
-    font-size: large;
-    font-weight: 800;
-}
-
-.label {
-    padding-right: 20px;
-}
-
-.user-forms {
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(15px);
-    text-align: center;    
-    color: white;
-    width: 600px;
-    padding: 10px;
-    margin: 1rem;
-    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
-    border-radius: 5px;
-    z-index: 20;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
+    margin-top: 30px;
+    text-shadow: 4px 4px black;
 }
 
 #header {
@@ -68,17 +38,16 @@ body {
     font-weight: 300;
 }
 
-#home {
-    width: 40px;
-    height: 40px;
+.history-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.brand {
-    display: flex;
-    font-size: 120px;
-    margin-bottom: 0;
-    margin-top: 30px;
-    text-shadow: 4px 4px black;
+.history-header-items {
+    color: chocolate;
+    text-shadow: 2px 2px black;
 }
 
 #header .slogan {
@@ -93,14 +62,45 @@ body {
 
 main {
     display: flex;
+    grid-template-columns: 400px 400px 400px;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 200px;
 }
 
-.new-user {
-    padding-top: 30px;
+.pet-card { 
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(12px);
+    text-align: center;    
+    color: white;
+    width: 350px;
+    padding: 10px;
+    margin: 1rem;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+    z-index: 20;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.pet-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.Socks {
+    object-position: 10% 0px;
+}
+
+.Fluffy {
+    object-position: 80% 0px;
+}
+
+.Rover {
+    object-position: 45% 5%;
 }
 
 footer {
@@ -116,6 +116,16 @@ footer {
     border-radius: 5px;
 }
 
-footer .footer-items {
+a:visited {
+    color: chocolate;
+}
+
+footer .footer-items, .rental-link {
     font-size: 22px;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', 'sans-serif';
+    height: 22px;
+    color: chocolate;
+    text-shadow: 1px 1px black;
+    font-weight: 800;
 }

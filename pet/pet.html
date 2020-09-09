@@ -5,23 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="showPet.js"></script>
-    <link rel="stylesheet" href= "../app.css">
+    <link rel="stylesheet" href= "../pet/pet.css">
     <link rel="icon" type="image/png" href="https://www.freepngimg.com/download/cat/35425-9-black-cat-transparent.png">
 </head>
 <body>
-    <h1>Your Pet</h1>
+    <section id="header">
+        <h1 class="brand">Pet-Renter</h1>
+        <p class="slogan">Money <span class="em">CAN</span> buy happiness!</p>
+    </section>
     <main>
-        <form method="POST" action=http://localhost:3000/rentals id= "rental-submission">
-            How many days would you like to rent this pet? (Maximum: 5 days)
-            <select>
-                <option value="1" selected>1 day</option>
-                <option value="2">2 days</option>
-                <option value="3">3 days</option>
-                <option value="4">4 days</option>
-                <option value="5">5 days</option>
-            </select>
-            <input type="submit" value="Rent this Pet!">
-        </form>
+        <div class="rental-form-container">
+            <form class="rental-form" method="POST" action=http://localhost:3000/rentals id="rental-submission">
+                <label class="rental-label" for="rental-days">How many days would you like to rent this pet? <p class="max-days">(Maximum: 5 days):</p></label>
+                <select id="rental-days">
+                    <option class="days-option" value="1" selected>1 day</option>
+                    <option class="days-option" value="2">2 days</option>
+                    <option class="days-option" value="3">3 days</option>
+                    <option class="days-option" value="4">4 days</option>
+                    <option class="days-option" value="5">5 days</option>
+                </select>
+                <input class="submit" type="submit" value="Rent this Pet!">
+            </form>
+        </div>    
     </main>
+    <footer>
+        <p class="footer-items">Contact</p>
+        <p class="footer-items">Github</p>
+        <p class="footer-items">Authors</p>
+    </footer>
 </body>
 </html>

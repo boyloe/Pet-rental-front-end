@@ -63,11 +63,19 @@ function renderPetDailyRate(pet, attributeList){
     dailyRate.innerText = `Daily Rate: $${pet.rate}`
     attributeList.appendChild(dailyRate)
 } 
-function renderPetImage(pet, attributeList){
-    const image = document.createElement('li')
-    image.innerHTML = `<img src=${pet.image} alt="A picture of a ${pet.breed}">`
-    attributeList.appendChild(image)
-} 
+// function renderPetImage(pet, attributeList){
+//     const image = document.createElement('li')
+//     image.innerHTML = `<img src=${pet.image} alt="A picture of a ${pet.breed}">`
+//     attributeList.appendChild(image)
+// } 
+
+function renderPetImage(pet, section) {
+    const image = document.createElement('img')
+    image.classList.add('pet-image')
+    image.src = pet.image
+    image.alt = `A picture of a ${pet.breed}`
+    section.appendChild(image)
+}
 
 //create a new rental selector that allows you to pick a date and verifies that date is availble. Then pull user_id and pet_id params from URL.
 function createRentalButton(userId,petId){
