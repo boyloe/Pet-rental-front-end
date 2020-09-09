@@ -7,13 +7,25 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-image: linear-gradient(cyan 0%, violet 100%);
     color: white;
-    height: 900px;
+    height: 750px;
+    background-repeat: no-repeat;
+}
+
+.nav-bar {
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+.bar {
+    border-radius: 25px;
+    font-family: 'Josefin Sans', 'sans-serif';
+    height: 22px
 }
 
 header {
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-self: flex-end;
 }
 
 .em {
@@ -51,9 +63,26 @@ main {
     justify-content: center;
     align-items: center;
     color: chocolate;
-    padding-top: 50px;
 }
 
 .new-user {
     padding-top: 10px;
+}
+
+.hidden-input {
+    display:none;
+}
+
+footer {
+    height: 200px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.footer-items {
+    padding-right: 20px;
+    padding-bottom: 20px;
 }

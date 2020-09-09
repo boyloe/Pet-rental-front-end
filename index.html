@@ -6,12 +6,16 @@
         <title>Pet Rental</title>
         <script src="./index.js" defer></script>
         <link rel="stylesheet" href="./app.css">
+        <link rel="icon" type="image/png" href="https://www.freepngimg.com/download/cat/35425-9-black-cat-transparent.png">
     </head>
 
     <body>
         <header>
-            <!-- <a href="/"><img id="home" src="https://static.wikia.nocookie.net/dogelore/images/9/97/Doge.jpg/revision/latest/scale-to-width-down/620?cb=20190205113053"></a> -->
-            <a href="/">Home</a>
+            <nav class="nav-bar">
+                <a href= "./index.html">Home</a>
+                <a href= "./pets/pets.html">Pets</a>
+                <!-- <a>Find a Random Pet</a> -->
+            </nav>
         </header>
         <section id="header">
             <h1 class="brand">Pet-Renter</h1>
@@ -19,16 +23,20 @@
         </section>
         
         <main>
-            <section class="user-forms"
+            <section class="user-forms">
                 <form class="existing-user" method="GET" action="http://localhost:3001/user/user.html">
-                    Select Your Username: <select name="user_id" id="user-select"></select>
-                    <input type="submit" value="submit">
+                    Select Your Username: <select class="select bar" name="user_id" id="user-select"></select>
+                    <input class="submit bar" type="submit" value="submit">
                 </form>
                 <form class="new-user" method="POST" action="http://localhost:3000/users">
-                    New User? Create a New Username: <input name="name" type="text" placeholder="username">
-                    <input type="submit" value="Create New User">
+                    New User? Create a New Username: <input class="input bar" name="name" type="text" placeholder="username">
+                    <input class="submit bar" type="submit" value="Create New User">
                 </form>
             </section>
         </main>
+        <footer>
+            <p class="footer-items">Contact</p>
+            <p class="footer-items">Github</p>
+        </footer>
     </body>
 </html>

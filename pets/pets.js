@@ -1,3 +1,6 @@
+const queryParams = new URLSearchParams(window.location.search)
+const userId = queryParams.get('user_id')
+
 fetch("http://localhost:3000/pets")
     .then(response => response.json())
     .then(pets => displayPetCard(pets))
@@ -57,6 +60,6 @@ function renderPetDailyRate(pet, attributeList){
 } 
 function renderPetImage(pet, attributeList){
     const image = document.createElement('li')
-    image.innerHTML = `<a href="../pet/pet.html?id=${pet.id}"><img src=${pet.image} alt="A picture of a ${pet.breed}"></a>`
+    image.innerHTML = `<a href="../pet/pet.html?pet_id=${pet.id}&user_id=${userId}"><img src=${pet.image} alt="A picture of a ${pet.breed}"></a>`
     attributeList.appendChild(image)
 } 
