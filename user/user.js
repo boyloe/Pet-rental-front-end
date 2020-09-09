@@ -28,6 +28,7 @@ function showPetName(pet, section) {
 
 function showPetImage(pet, section) {
     const image = document.createElement('img')
+    image.classList.add('pet-image')
     image.src = pet.image
     section.appendChild(image)
 }

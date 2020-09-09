@@ -60,6 +60,6 @@ function renderPetDailyRate(pet, attributeList){
 } 
 function renderPetImage(pet, attributeList){
     const image = document.createElement('li')
-    image.innerHTML = `<a href="../pet/pet.html?pet_id=${pet.id}&user_id=${userId}"><img src=${pet.image} alt="A picture of a ${pet.breed}"></a>`
+    image.innerHTML = `<a href="../pet/pet.html?pet_id=${pet.id}&user_id=${userId}"><img class="pet-image ${pet.name}" src=${pet.image} alt="A picture of a ${pet.breed}"></a>`
     attributeList.appendChild(image)
 } 
