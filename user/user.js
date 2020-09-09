@@ -35,7 +35,7 @@ function showPetImage(pet, section) {
 
 function newRentalLink(user){
     newRental = document.createElement('a')
-    newRental.textContent = "Rent Another Pet!"
+    newRental.textContent = "Find A Pet!"
     newRental.href = `../pets/pets.html?user_id=${user.id}`
     document.body.appendChild(newRental)
 }

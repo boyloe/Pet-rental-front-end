@@ -11,12 +11,13 @@
     <h1>Your Pet</h1>
     <main>
         <form method="POST" action=http://localhost:3000/rentals id= "rental-submission">
-            How many days would you like to rent this pet?<select>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
+            How many days would you like to rent this pet? (Maximum: 5 days)
+            <select>
+                <option value="1" selected>1 day</option>
+                <option value="2">2 days</option>
+                <option value="3">3 days</option>
+                <option value="4">4 days</option>
+                <option value="5">5 days</option>
             </select>
             <input type="submit" value="Rent this Pet!">
         </form>
