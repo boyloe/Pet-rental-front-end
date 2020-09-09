@@ -16,18 +16,26 @@ function showUserInfo(user) {
         showPetName(pet, section)
         showPetImage(pet, section)
     })
+    newRentalLink(user)
 }
 
 function showPetName(pet, section) {
     const name = document.createElement('h3')
     name.textContent = pet.name
     section.appendChild(name)
-    console.log(pet)
+   
 }
 
 function showPetImage(pet, section) {
     const image = document.createElement('img')
     image.src = pet.image
     section.appendChild(image)
+}
+
+function newRentalLink(user){
+    newRental = document.createElement('a')
+    newRental.textContent = "Find A Pet!"
+    newRental.href = `../pets/pets.html?user_id=${user.id}`
+    document.body.appendChild(newRental)
 }
 
