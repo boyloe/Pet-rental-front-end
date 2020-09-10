@@ -98,14 +98,12 @@ a {
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(15px);
     text-align: center;    
-    color: white;
     width: 600px;
     height: 300px;
     padding: 10px;
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
-    z-index: 20;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -122,7 +120,6 @@ a {
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
-    z-index: 20;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -204,4 +201,18 @@ footer .footer-items {
 
 a:visited {
     color: chocolate;
+}
+
+label.max-days {
+    padding-top:15px;
+}
+
+label.rental-label {
+    padding-top:15px;
+}
+
+.footer-items .authors a{
+    color: chocolate;
+    font-size: 14px;
+    text-decoration: none;
 }

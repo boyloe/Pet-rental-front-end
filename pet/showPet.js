@@ -3,7 +3,7 @@ const queryParams = new URLSearchParams(window.location.search)
 const petId = queryParams.get('pet_id')
 const userId = queryParams.get('user_id')
 
-
+const label = document.querySelector('.rental-label')
 const main = document.querySelector('main')
 const rentalForm = document.querySelector('#rental-submission')
 
@@ -12,6 +12,7 @@ fetch(`http://localhost:3000/pets/${petId}`)
     .then(displayPetCard)
 
 function displayPetCard(pet) {
+    label.textContent = `How many days would you like to rent ${pet.name}?`
     petCard = createPetCard()       
     renderPetName(pet,petCard)
     attributeList = createAttributeList(petCard)        
