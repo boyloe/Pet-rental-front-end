@@ -83,7 +83,6 @@ main {
 
 .rental-form, .rental-label, .days-option {
     font-family: 'Josefin Sans', 'sans-serif';
-    /* height: 22px; */
     color: chocolate;
     text-shadow: 1px 1px black;
     font-size: x-large;
