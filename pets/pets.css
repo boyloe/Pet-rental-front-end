@@ -139,6 +139,48 @@ footer {
     border-radius: 5px;
 }
 
+.species-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit, #species-select {
+    border-radius: 25px;
+    font-family: 'Josefin Sans', 'sans-serif';
+    height: 22px;
+    color: chocolate;
+}
+
+
+.label {
+    padding-right: 15px;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', 'sans-serif';
+    height: 22px;
+    color: chocolate;
+    text-shadow: 1px 1px black;
+    font-size: large;
+    font-weight: 800;
+}
+
+.species-action {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(15px);
+    text-align: center;    
+    color: white;
+    width: 600px;
+    padding: 10px;
+    margin: 1rem;
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+    z-index: 20;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
 footer .footer-items {
     font-size: 22px;
     border-radius: 25px;

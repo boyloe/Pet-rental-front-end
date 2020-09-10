@@ -85,9 +85,6 @@ body {
     text-decoration: none;
 }
 
-/* a:visited {
-    color: chocolate;
-} */
 .link:visited {
     color: chocolate;
 }
