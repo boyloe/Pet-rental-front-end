@@ -72,15 +72,38 @@ main {
     border-radius: 30px;
 }
 
-.attributes {
-    color: black;
+ul > li {
+    padding:4px;
+}
+
+.pet-card h3 {
+    text-shadow: 2px 2px black;
+    font-weight: 800;
+    font-size: xx-large;
+    margin: 20px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: chocolate;
+}
+
+.attributes, h3 {
     padding-inline-start: 0px;
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    color: chocolate;
+    text-shadow: 1px 1px black;
+    font-weight: 700;
+    font-size: large;
 }
 
 .pet-image {
+    padding-top: 15px;
     width: 250px;
     height: 250px;
     object-fit: cover;
@@ -97,4 +120,35 @@ main {
 
 .Rover {
     object-position: 45% 5%;
+}
+
+.hidden-input {
+    display:none;
+}
+
+footer {
+    align-self: center;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(1px);
+    box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+    border-radius: 5px;
+}
+
+footer .footer-items {
+    font-size: 22px;
+    border-radius: 25px;
+    font-family: 'Josefin Sans', 'sans-serif';
+    height: 22px;
+    color: chocolate;
+    text-shadow: 1px 1px black;
+    font-weight: 800;
+}
+
+a {
+    color: chocolate
 }

@@ -1,14 +1,17 @@
 const userQueryParams = new URLSearchParams(window.location.search)
 const userId = userQueryParams.get('user_id')
+const hidden = document.querySelector('.hidden-input')
+hidden.value = userId
 
 const speciesQueryParams = new URLSearchParams(window.location.search)
 const species = speciesQueryParams.get("species")
 
-let baseURL = "http://localhost:3000/pets"
+let baseURL = `http://localhost:3000/pets/`
 
 if (species) {
     baseURL = `${baseURL}?species=${species}`
 }
+
 fetch(`${baseURL}`)
     .then(response => response.json())
     .then(pets => displayPetCard(pets))

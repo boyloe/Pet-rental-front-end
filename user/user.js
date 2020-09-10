@@ -9,18 +9,26 @@ fetch(`http://localhost:3000/users/${userId}`)
     .then(showUserInfo)
     
 function showUserInfo(user) {
-    const petsHeader = document.createElement('h2')
-    petsHeader.textContent = `Welcome, ${user.name}! Here's your pet rental history`
-    petsHeader.classList.add('history-header-items')
-    historyHeader.appendChild(petsHeader)
-    newRentalLink(user)
-    user.pets.forEach(pet => {
-        const petCard = document.createElement('section')
-        petCard.classList.add('pet-card')
-        main.appendChild(petCard)
-        showPetName(pet, petCard)
-        showPetImage(pet, petCard)
-    })
+    if (user.pets.length === 0) {
+        const petsHeader = document.createElement('h2')
+        petsHeader.textContent = `Welcome, ${user.name}! You have no rental history.`
+        petsHeader.classList.add('history-header-items')
+        historyHeader.appendChild(petsHeader)
+        newRentalLink(user)
+    } else {
+        const petsHeader = document.createElement('h2')
+        petsHeader.textContent = `Welcome, ${user.name}! Here's your pet rental history`
+        petsHeader.classList.add('history-header-items')
+        historyHeader.appendChild(petsHeader)
+        newRentalLink(user)
+        user.pets.forEach(pet => {
+            const petCard = document.createElement('section')
+            petCard.classList.add('pet-card')
+            main.appendChild(petCard)
+            showPetName(pet, petCard)
+            showPetImage(pet, petCard)
+        })
+    }
 }
 
 function showPetName(pet, section) {
@@ -40,7 +48,11 @@ function showPetImage(pet, section) {
 function newRentalLink(user) {
     newRental = document.createElement('p')
     newRental.classList.add('history-header-items')
-    newRental.innerHTML = `<span class="rental-link"><a href="../pets/pets.html?user_id=${user.id}">Rent a new pet</a></span>, or pick a past favorite!`
+    if (user.pets.length === 0) {
+        newRental.innerHTML = `Let's rent you a new <span class="rental-link"><a class="no-previous-rental-link" href="../pets/pets.html?user_id=${user.id}">best friend!</a></span>`
+    } else {
+        newRental.innerHTML = `<span class="rental-link"><a href="../pets/pets.html?user_id=${user.id}">Rent a new pet</a></span>, or pick a past favorite!`
+    }
     historyHeader.appendChild(newRental)
 }
 

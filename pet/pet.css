@@ -19,8 +19,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 200px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+a {
+    color: chocolate
 }
 
 #header {
@@ -113,7 +117,7 @@ main {
     backdrop-filter: blur(12px);
     text-align: center;    
     color: white;
-    width: 350px;
+    width: 400px;
     padding: 10px;
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
@@ -125,17 +129,32 @@ main {
     border-radius: 30px;
 }
 
-.attributes {
-    color: black;
+.pet-card h3 {
+    text-shadow: 2px 2px black;
+    font-weight: 800;
+    font-size: xx-large;
+    margin: 20px;
+}
+
+ul > li {
+    padding:4px;
+}
+
+.attributes, h3 {
     padding-inline-start: 0px;
     list-style-type: none;
     justify-content: center;
     align-items: center;
+    color: chocolate;
+    text-shadow: 1px 1px black;
+    font-weight: 700;
+    font-size: large;
 }
 
 .pet-image {
-    width: 250px;
-    height: 250px;
+    padding-top: 15px;
+    width: 375px;
+    height: 375px;
     object-fit: cover;
     border-radius: 30px;
 }
@@ -177,4 +196,12 @@ footer .footer-items {
     color: chocolate;
     text-shadow: 1px 1px black;
     font-weight: 800;
+}
+
+.link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: chocolate;
 }
