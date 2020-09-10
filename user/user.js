@@ -17,7 +17,7 @@ function showUserInfo(user) {
         newRentalLink(user)
     } else {
         const petsHeader = document.createElement('h2')
-        petsHeader.textContent = `Welcome, ${user.name}! Here's your pet rental history`
+        petsHeader.textContent = `Welcome, ${user.name}! Here's your pet rental history!`
         petsHeader.classList.add('history-header-items')
         historyHeader.appendChild(petsHeader)
         newRentalLink(user)

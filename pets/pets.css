@@ -59,13 +59,11 @@ main {
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(12px);
     text-align: center;    
-    color: white;
     width: 350px;
     padding: 10px;
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
-    z-index: 20;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -152,7 +150,6 @@ footer {
     color: chocolate;
 }
 
-
 .label {
     padding-right: 15px;
     border-radius: 25px;
@@ -168,13 +165,11 @@ footer {
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(15px);
     text-align: center;    
-    color: white;
     width: 600px;
     padding: 10px;
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
-    z-index: 20;
     flex-direction: row;
     justify-content: center;
     align-items: center;
