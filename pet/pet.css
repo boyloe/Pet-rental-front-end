@@ -210,3 +210,9 @@ label.max-days {
 label.rental-label {
     padding-top:15px;
 }
+
+.footer-items .authors a{
+    color: chocolate;
+    font-size: 14px;
+    text-decoration: none;
+}

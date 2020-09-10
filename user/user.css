@@ -132,10 +132,6 @@ footer {
     border-radius: 5px;
 }
 
-p {
-    font-size: 18px;
-}
-
 .link {
     text-decoration: none;
 }
@@ -168,4 +164,10 @@ footer .footer-items, .rental-link {
     color: chocolate;
     text-shadow: 1px 1px black;
     font-weight: 800;
+}
+
+.footer-items .authors a{
+    color: chocolate;
+    font-size: 14px;
+    text-decoration: none;
 }

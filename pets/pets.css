@@ -189,3 +189,9 @@ footer .footer-items {
 a {
     color: chocolate
 }
+
+.footer-items .authors a{
+    color: chocolate;
+    font-size: 14px;
+    text-decoration: none;
+}
