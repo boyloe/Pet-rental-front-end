@@ -1,7 +1,22 @@
-const queryParams = new URLSearchParams(window.location.search)
-const userId = queryParams.get('user_id')
+const userQueryParams = new URLSearchParams(window.location.search)
+const userId = userQueryParams.get('user_id')
+const hidden = document.querySelector('input[name="user_id"]')
+hidden.value = userId
+console.log(hidden)
 
-fetch("http://localhost:3000/pets")
+const speciesQueryParams = new URLSearchParams(window.location.search)
+const species = speciesQueryParams.get("species")
+const form = document.querySelector('.species-action')
+form.action = `http://localhost:3001/pets/pets.html?user_id=${userId}`
+
+
+let baseURL = `http://localhost:3000/pets/`
+
+if (species) {
+    baseURL = `${baseURL}?species=${species}`
+}
+
+fetch(`${baseURL}`)
     .then(response => response.json())
     .then(pets => displayPetCard(pets))
 

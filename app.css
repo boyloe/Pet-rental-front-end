@@ -81,6 +81,16 @@ body {
     text-shadow: 4px 4px black;
 }
 
+.link {
+    text-decoration: none;
+}
+
+/* a:visited {
+    color: chocolate;
+} */
+.link:visited {
+    color: chocolate;
+}
 #header .slogan {
     display: flex;
     text-shadow: 2px 2px black;
@@ -114,8 +124,16 @@ footer {
     backdrop-filter: blur(1px);
     box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
     border-radius: 5px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
 }
 
 footer .footer-items {
     font-size: 22px;
 }
+
+a {
+    color: chocolate
+}
+
