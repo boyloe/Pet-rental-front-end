@@ -9,7 +9,7 @@
 * [License](#license)
 
 ## Intro Video
-
+[Introduction to Pet Renter](https://www.loom.com/share/db79404b999a488caf93d27b37630dae)
 ## Getting Started
 1.Clone [backend](https://github.com/TJBachorz/Pet-Rental-back-end) and [frontend](https://github.com/boyloe/Pet-rental-front-end) repos to your local computer<br>
 2.Open backend and run `bundle install`<br>
