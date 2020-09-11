@@ -13,7 +13,7 @@ fetch(`http://localhost:3000/pets/${petId}`)
 
 function displayPetCard(pet) {
     const title = document.querySelector('#title')
-    title.innerHTML = `Rent ${pet.name} today!`
+    title.innerHTML = `Rent ${pet.name} Today!`
     label.textContent = `How many days would you like to rent ${pet.name}?`
     petCard = createPetCard()       
     renderPetName(pet,petCard)
