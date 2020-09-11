@@ -17,7 +17,7 @@
 > used Pet-Rental, you will be invited to rent your first pet. Clicking on the link will bring you to our "Pets" page where you can select the animal that you want
 > to rent. Click on the picture of your favorite cat or dog and you will be shown all of the information for that animal and be able to select the dates that you want
 > want to enjoy your furry friend. Pick your dates and click on "Rent This Pet" and your reservation will be complete!
-
-![Home Page](./img/ "Title")
+Home Page
+<img src="./img/CreateUser.png" width="1035" height ="649" />
 
 ### [License Information](https://www.termsfeed.com/live/31cbacda-3fe3-4b0c-adf3-c6ca250f4744)
