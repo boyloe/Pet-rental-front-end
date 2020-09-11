@@ -20,8 +20,8 @@
 > Once you have logged in, you will be taken to your personal "User" page which will display all the pets you have rented in the past. If you have not previously
 > used Pet-Rental, you will be invited to rent your first pet. 
 >Clicking on the link will bring you to our "Pets" page where you can select the animal that you want to rent. 
-###User Page
-<img src="./img/CreateUser.png" width="1035" height ="649" />
+### User Page
+<img src="./img/UserPage.png" width="1035" height ="649" />
 >Click on the picture of your favorite cat or dog and you will be shown all of the information for that animal and be able to select the dates that you want
 > want to enjoy your furry friend. Pick your dates and click on "Rent This Pet" and your reservation will be complete!
 
