@@ -1,4 +1,4 @@
-# Welcome to Pet-Rental!
+# Welcome to Pet-Renter!
 
 ## Table of Contents
 * [Intro Video](#intro-video)
@@ -19,8 +19,8 @@
 
 
 ## About
-Have you ever wanted to own a cat or dog, but only for a day or two? Well, then Pet-Rental is the app for you!
-If this is your first time using Pet-Rental, create a new account by typing your name into the text bar and clicking on the 'Create new user' button.
+Have you ever wanted to own a cat or dog, but only for a day or two? Well, then Pet-Renter is the app for you!
+If this is your first time using Pet-Renter, create a new account by typing your name into the text bar and clicking on the 'Create new user' button.
 
 ### Home Page
 <img src="./img/CreateUser.png" width="1035" height ="649">
