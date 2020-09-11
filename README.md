@@ -1,5 +1,5 @@
 # Welcome to Pet-Rental!
-### Setup
+## Setup
 1.Clone [backend](https://github.com/TJBachorz/Pet-Rental-back-end) and [frontend](https://github.com/boyloe/Pet-rental-front-end) repos to your local computer<br>
 2.Open backend and run `bundle install`<br>
 3.Run `rails db:migrate` and then `rails db:seed`<br>
@@ -7,7 +7,7 @@
 5.Open front-end and run `lite-server`<br>
 
 
-### About
+## About
 Have you ever wanted to own a cat or dog, but only for a day or two? Well, then Pet-Rental is the app for you!
 If this is your first time using Pet-Rental, create a new account by typing your name into the text bar and clicking on the 'Create new user' button.
 
@@ -27,6 +27,13 @@ Click on the picture of your favorite cat or dog and you will be shown all of th
 ### Rental Page
 <img src="./img/Rental.png" width="1035" height ="649"/>
 
+## Technologies
+* Ruby on Rails
+* Javascript
+
+## Authors
+Created by [Bryan Oyloe](https://www.github.com/boyloe) and [TJ Bachorz](https://www.github.com/TJBachorz)
 
 
-### [License Information](https://www.termsfeed.com/live/31cbacda-3fe3-4b0c-adf3-c6ca250f4744)
+
+## [License Information](https://www.termsfeed.com/live/31cbacda-3fe3-4b0c-adf3-c6ca250f4744)
