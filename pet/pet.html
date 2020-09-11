@@ -17,11 +17,12 @@
         <div class="rental-form-container">
             <form class="rental-form" method="POST" action=http://localhost:3000/rentals id="rental-submission">
                 <label class="rental-label">How many days would you like to rent this pet?</label> 
+                <label class="rental-label start" for="start-date">Start Date:</label>
                 <input id="start-date" type="date" onchange="getDays()">
+                <label class="rental-label end" for="end-date">End Date:</label>
                 <input id="end-date" type="date" onchange="getDays()">
                 <input name="days" id="hidden-days" type="hidden">
                 <input class="submit" type="submit" value="Rent this Pet!">
-              
             </form>
         </div>    
     </main>
@@ -30,7 +31,7 @@
         <summary class="authors">
             <p class="footer-items"><span class="authors"><a  href="https://www.linkedin.com/in/tjbachorz/">TJ Bachorz</a></span> -  Authors  - <span class="authors"><a href="https://www.linkedin.com/in/bryan-oyloe">Bryan Oyloe</a></span></p>
         </summary>
-        <p class="footer-items">Github</p> 
+        <p class="footer-items"><a class="link" href="https://github.com/boyloe/Pet-rental-front-end">Github</a></p> 
     </footer>
 </body>
 </html>
