@@ -13,6 +13,7 @@ function showUserInfo(user) {
         const petsHeader = document.createElement('h2')
         petsHeader.textContent = `Welcome, ${user.name}! You have no rental history.`
         petsHeader.classList.add('history-header-items')
+        main.style.marginBottom = '314px'
         historyHeader.appendChild(petsHeader)
         newRentalLink(user)
     } else {
