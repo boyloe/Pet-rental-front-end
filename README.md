@@ -1,5 +1,16 @@
 # Welcome to Pet-Rental!
-## Setup
+
+## Table of Contents
+* [Intro Video](#intro-video)
+* [Getting Started](#getting-started)
+* [About](#about)
+* [Technologies](#technologies)
+* [Authors](#authors)
+* [License](#license)
+
+## Intro Video
+
+## Getting Started
 1.Clone [backend](https://github.com/TJBachorz/Pet-Rental-back-end) and [frontend](https://github.com/boyloe/Pet-rental-front-end) repos to your local computer<br>
 2.Open backend and run `bundle install`<br>
 3.Run `rails db:migrate` and then `rails db:seed`<br>
@@ -35,5 +46,4 @@ Click on the picture of your favorite cat or dog and you will be shown all of th
 Created by [Bryan Oyloe](https://www.github.com/boyloe) and [TJ Bachorz](https://www.github.com/TJBachorz)
 
 
-
-## [License Information](https://www.termsfeed.com/live/31cbacda-3fe3-4b0c-adf3-c6ca250f4744)
+## [License](https://www.termsfeed.com/live/31cbacda-3fe3-4b0c-adf3-c6ca250f4744)
