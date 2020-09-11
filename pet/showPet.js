@@ -89,3 +89,25 @@ function createRentalButton(userId,petId){
     rentalForm.appendChild(userIdInput)
     rentalForm.appendChild(petIdInput)
 }
+function getDays(){
+    startDate = new Date(document.querySelector("#start-date").value);
+    console.log(startDate)
+    endDate = new Date(document.querySelector("#end-date").value);
+    console.log(endDate)
+    return Math.floor((Date.UTC(endDate.getFullYear(), endDate.getMonth(), endDate.getDate()) - Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()) ) /(1000 * 60 * 60 * 24))
+    }
+
+const days = document.querySelector('#hidden-days')
+let startDate = document.querySelector('#start-date')
+let endDate = document.querySelector('#end-date')
+startDate.addEventListener('change', function(){ 
+    days.value = getDays()
+    console.log(days.value)
+})
+endDate.addEventListener('change', function(){ 
+    days.value = getDays()
+    console.log(days.value)
+})
+function daysValue(){
+    days.value = getDays()
+}
