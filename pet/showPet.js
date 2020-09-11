@@ -74,7 +74,6 @@ function renderPetImage(pet, section) {
     section.appendChild(image)
 }
 
-//create a new rental selector that allows you to pick a date and verifies that date is availble. Then pull user_id and pet_id params from URL.
 function createRentalButton(userId,petId){
     const userIdInput = document.createElement('input')
     const petIdInput = document.createElement('input')
