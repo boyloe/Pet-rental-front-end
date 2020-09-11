@@ -21,7 +21,10 @@ function showUserInfo(user) {
         petsHeader.classList.add('history-header-items')
         historyHeader.appendChild(petsHeader)
         newRentalLink(user)
-        user.pets.forEach(pet => {
+        let uniquePetIds = new Set(user.pets.map(pet => pet.id))
+        let idArray = [...uniquePetIds]
+        let uniquePets = idArray.map(id => user.pets.find(pet => pet.id === id))
+        uniquePets.forEach(pet => {
             const petCard = document.createElement('section')
             petCard.classList.add('pet-card')
             main.appendChild(petCard)

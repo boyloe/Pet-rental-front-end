@@ -2,7 +2,6 @@ const userQueryParams = new URLSearchParams(window.location.search)
 const userId = userQueryParams.get('user_id')
 const hidden = document.querySelector('input[name="user_id"]')
 hidden.value = userId
-console.log(hidden)
 
 const speciesQueryParams = new URLSearchParams(window.location.search)
 const species = speciesQueryParams.get("species")
