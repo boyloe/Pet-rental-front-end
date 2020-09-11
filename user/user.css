@@ -171,3 +171,19 @@ footer .footer-items, .rental-link {
     font-size: 14px;
     text-decoration: none;
 }
+
+.Sunny {
+    object-position: 75% 0px;
+}
+
+.Slick {
+    object-position: 30% 0px;
+}
+
+.Nugget {
+    object-position: 65% 0px;
+}
+
+.Bubba {
+    object-position: 80% 0px;
+}
