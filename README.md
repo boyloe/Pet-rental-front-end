@@ -19,12 +19,11 @@ used Pet-Rental, you will be invited to rent your first pet. Clicking on the lin
 
 ### User Page
 <img src="./img/UserPage.png" width="1035" height ="649"/>
->
+
 ### Pets Page
 <img src="./img/Pets.png" width="1035" height ="649"/>
->
->Click on the picture of your favorite cat or dog and you will be shown all of the information for that animal and be able to select the dates that you want
-> want to enjoy your furry friend. Pick your dates and click on "Rent This Pet" and your reservation will be complete!
+
+Click on the picture of your favorite cat or dog and you will be shown all of the information for that animal and be able to select the dates that you want to enjoy your furry friend. Pick your dates and click on "Rent This Pet" and your reservation will be complete!
 ### Rental Page
 <img src="./img/Rental.png" width="1035" height ="649"/>
 
