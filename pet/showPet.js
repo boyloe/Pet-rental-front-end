@@ -12,6 +12,8 @@ fetch(`http://localhost:3000/pets/${petId}`)
     .then(displayPetCard)
 
 function displayPetCard(pet) {
+    const title = document.querySelector('#title')
+    title.innerHTML = `Rent ${pet.name} today!`
     label.textContent = `How many days would you like to rent ${pet.name}?`
     petCard = createPetCard()       
     renderPetName(pet,petCard)
@@ -106,3 +108,4 @@ startDate.addEventListener('change', function(){
 endDate.addEventListener('change', function(){ 
     days.value = getDays()
 })
+

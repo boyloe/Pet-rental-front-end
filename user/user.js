@@ -9,6 +9,8 @@ fetch(`http://localhost:3000/users/${userId}`)
     .then(showUserInfo)
     
 function showUserInfo(user) {
+    const title = document.querySelector('#title')
+    title.innerHTML = `Welcome ${user.name}!`
     if (user.pets.length === 0) {
         const petsHeader = document.createElement('h2')
         petsHeader.textContent = `Welcome, ${user.name}! You have no rental history.`
