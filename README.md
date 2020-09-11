@@ -21,3 +21,5 @@
 > want to enjoy your furry friend. Pick your dates and click on "Rent This Pet" and your reservation will be complete!
 
 ![Home Page](./img/ "Title")
+
+### [License Information](https://www.termsfeed.com/live/31cbacda-3fe3-4b0c-adf3-c6ca250f4744)
