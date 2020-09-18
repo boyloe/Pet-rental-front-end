@@ -9,13 +9,13 @@ const form = document.querySelector('.species-action')
 form.action = `https://pet-renter.web.app//pets/pets.html?user_id=${userId}`
 
 
-let baseURL = "https://pet-renter-back-end.herokuapp.com"
-
+const baseURL = "https://pet-renter-back-end.herokuapp.com"
+let petsURL = `${baseURL}/pets`
 if (species) {
-    baseURL = `${baseURL}?species=${species}`
+    petsURL = `${petsURL}?species=${species}`
 }
 
-fetch(`${baseURL}`)
+fetch(`${petsURL}`)
     .then(response => response.json())
     .then(pets => displayPetCard(pets))
 
