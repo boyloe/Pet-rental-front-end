@@ -6,8 +6,9 @@ const userId = queryParams.get('user_id')
 const label = document.querySelector('.rental-label')
 const main = document.querySelector('main')
 const rentalForm = document.querySelector('#rental-submission')
+let baseURL = "https://pet-renter-back-end.herokuapp.com"
 
-fetch(`http://localhost:3000/pets/${petId}`)
+fetch(`${baseURL}/pets/${petId}`)
     .then(response => response.json())
     .then(displayPetCard)
 

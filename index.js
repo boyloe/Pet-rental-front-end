@@ -1,7 +1,8 @@
 const queryParams = new URLSearchParams(window.location.search)
 const userId = queryParams.get('user')
+const baseURL = "https://pet-renter-back-end.herokuapp.com/"
 
-fetch("http://localhost:3000/users")
+fetch(`${baseURL}users`)
     .then(response => response.json())
     .then(userSelection)
 

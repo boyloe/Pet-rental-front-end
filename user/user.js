@@ -1,10 +1,11 @@
 const queryParams = new URLSearchParams(window.location.search)
 const userId = queryParams.get('user_id')
+const baseURL = "https://pet-renter-back-end.herokuapp.com/"
 
 const main = document.querySelector('main')
 const historyHeader = document.querySelector('.history-header')
 
-fetch(`http://localhost:3000/users/${userId}`)
+fetch(`${baseURL}users/${userId}`)
     .then(response => response.json())
     .then(showUserInfo)
     
