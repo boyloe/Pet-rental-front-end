@@ -6,7 +6,7 @@ hidden.value = userId
 const speciesQueryParams = new URLSearchParams(window.location.search)
 const species = speciesQueryParams.get("species")
 const form = document.querySelector('.species-action')
-form.action = `https://pet-renter.web.app//pets/pets.html?user_id=${userId}`
+form.action = `https://pet-renter.web.app/pets/pets.html?user_id=${userId}`
 
 
 const baseURL = "https://pet-renter-back-end.herokuapp.com"
@@ -14,7 +14,7 @@ let petsURL = `${baseURL}/pets`
 if (species) {
     petsURL = `${petsURL}?species=${species}`
 }
-
+console.log(petsURL)
 fetch(`${petsURL}`)
     .then(response => response.json())
     .then(pets => displayPetCard(pets))
