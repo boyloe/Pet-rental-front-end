@@ -18,13 +18,16 @@
         <main>
             <section class="user-forms">
                 <form class="existing-user" method="GET" action="https://pet-renter.web.app/user/user.html">
-                    <label class="label bar" for="user-select">Existing User? Select Your Username:  </label>
-                    <select id="user-select" class="select line" name="user_id"></select>
+                    <label class="label bar" for="user-select">Existing User? Select Your Username:</label>
+                    <label class="label bar" for="new-user">New User? Create a New Username:  </label>
+                    <input id="new-user" class="input line" name="name" type="text" placeholder="Username">
+                    <input id="new-user" class="input line" name="password" type="password" placeholder="Password">
                     <input class="submit" type="submit" value="Log-in">
                 </form>
                 <form class="new-user" method="POST" action="https://pet-renter-back-end.herokuapp.com/users">
                     <label class="label bar" for="new-user">New User? Create a New Username:  </label>
                     <input id="new-user" class="input line" name="name" type="text" placeholder="Username">
+                    <input id="new-user" class="input line" name="password" type="password" placeholder="Password">
                     <input class="submit" type="submit" value="Create New User">
                 </form>
             </section>
