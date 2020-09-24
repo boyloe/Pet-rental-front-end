@@ -14,7 +14,7 @@ let petsURL = `${baseURL}/pets`
 if (species) {
     petsURL = `${petsURL}?species=${species}`
 }
-console.log(petsURL)
+
 fetch(`${petsURL}`)
     .then(response => response.json())
     .then(pets => displayPetCard(pets))
