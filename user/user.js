@@ -1,11 +1,19 @@
 const queryParams = new URLSearchParams(window.location.search)
 const userId = queryParams.get('user_id')
-const baseURL = "https://pet-renter-back-end.herokuapp.com/"
+// const baseURL = "https://pet-renter-back-end.herokuapp.com"
+const baseURL = "http://localhost:3000"
 
 const main = document.querySelector('main')
 const historyHeader = document.querySelector('.history-header')
 
-fetch(`${baseURL}users/${userId}`)
+fetch(`${baseURL}/users/${userId}`, {
+    method: "GET",
+    headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "Authorization": `Bearer ${localStorage.getItem("token")}`
+    }
+})
     .then(response => response.json())
     .then(showUserInfo)
     
